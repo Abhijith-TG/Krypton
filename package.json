@@ -13,9 +13,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Abhijith-TG/Krypton/issues"
   },
-  "homepage": "https://github.com/Abhijith-TG/Krypton#readme"
+  "homepage": "https://github.com/Abhijith-TG/Krypton#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
 }
