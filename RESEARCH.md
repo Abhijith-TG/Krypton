@@ -15,3 +15,12 @@ Ans: The browser will block the request and show an error in the console.
 TypeScript Design: In TypeScript, what is the runtime and compile-time difference between using a const enum / enum versus a string literal union type (e.g., 'GET' | 'POST' | ...) for HttpMethod? Which one are you choosing for Krypton, and why?
 
 Ans: Using types will be the best way, its easy by the way. enums requires importing the http but types can handle raw strings like 'GET', 'POST' directly. 
+
+Jest vs Vitest
+
+Search: [vitest vs jest](https://medium.com/on-tech-by-leighton/jest-vs-vitest-choosing-the-right-testing-framework-for-your-typescript-projects-07f23c4aa76c)
+Question to answer: Which test runner are you choosing for Krypton, and why?
+
+Ans: jest is a mature testing module while vitest is a latest one with typescript build in support and we don't need to install anything in a vite project for vitest. also vitest is faster compared to jest
+
+so i think i can go with vitest also we only need to setup vite.

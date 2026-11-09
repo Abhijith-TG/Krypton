@@ -4,3 +4,4 @@
 4. HttpHeaders vs HttpHeaders[]:
     - HttpHeaders is like a dictionary where each key has only one value. an array
     - HttpHeaders[] is like a list of dictionaries where each dictionary can have multiple values. multiple objects in an array
+5. Using Vitest for testing is much better than Jest as its faster and has typescript build in support. No pain on install. Can directly use 'npm test' to run the tests.
