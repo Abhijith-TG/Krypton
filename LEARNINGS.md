@@ -1,7 +1,2 @@
-Your Task:
-[.] Add dist to .gitignore.
-Create src/types/http.ts.
-In src/types/http.ts, declare and export:
-HttpMethod (as a string literal union type).
-HttpHeaders (representing key-value pairs where keys are strings, and values can be a string or an array of strings).
-Tell me your answer about enum vs. string literal union.
+1. Learned why i shouldn't use browser for an API request client. As inbuild browser methods used to protect from malicious requests using CORS and other security measures. 
+2. Advantage of using type over enum, as type is more flexible than enum. For our current project we might need to to import librabries if we use enum but for types no need just 'GET','POST' is enough. Also it won't affect javascript build code with types as they will be removed.
