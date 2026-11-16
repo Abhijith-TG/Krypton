@@ -4,13 +4,14 @@ export type HttpHeaders = Record<string, string | string[] | undefined>;
 
 export type QueryParams = Record<string, string | string[] | undefined>;
 
-
+//for UI
 export interface HeaderRow {
     id: string;
     key: string;
     value: string;
     enabled: boolean;
 }
+
 
 export interface HttpRequest {
     method: HttpMethod;
