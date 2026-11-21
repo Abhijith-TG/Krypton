@@ -24,3 +24,17 @@ Question to answer: Which test runner are you choosing for Krypton, and why?
 Ans: jest is a mature testing module while vitest is a latest one with typescript build in support and we don't need to install anything in a vite project for vitest. also vitest is faster compared to jest
 
 so i think i can go with vitest also we only need to setup vite.
+
+What should we do with HeaderRow?
+
+keep it in its seperate file for UI
+
+What can a Request Body actually be?
+
+body?: string | Buffer | Uint8Array; this is the best option than doing JSON.stringfy with unknown type because if we follow first rule its predictable else its not predictable if the user gave a malformed json we wont be able to test it as well
+
+
+In your own words, answer the two error questions above: Should a 404 Not Found reject the promise or resolve with { statusCode: 404 }? Why?
+
+
+It should resolve with 404 status code, because the user should  know that tis route or data doesn't exist right instead of unexpected behaviour
